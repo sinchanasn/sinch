@@ -1,0 +1,7 @@
+[
+  ["Typography", "I choose type for character and legibility, then set a clear scale so headings, body text and code each have a job."],
+  ["Layout and hierarchy", "Every screen has one focal point. Spacing, alignment and contrast guide the eye to what matters first."],
+  ["Colour and contrast", "Restrained palettes with accessible contrast, checked in both light and dark."],
+  ["Interaction and motion", "Hover, focus and transition states that show what changed, never decoration for its own sake."],
+  ["UI prototyping", "I turn rough ideas into responsive, working prototypes and refine them until they feel finished."]
+]

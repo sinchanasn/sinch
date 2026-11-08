@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #160000;
+  --fg: #F1E7DF;
+  --acc: #FF5A3C;
+  --dim: #B79F96;
+  --line: rgba(241, 231, 223, 0.22);
+}
+
+:root[data-theme="light"] {
+  --bg: #F1E7DF;
+  --fg: #160000;
+  --acc: #C7260A;
+  --dim: #5E4A44;
+  --line: rgba(22, 0, 0, 0.25);
+}
+
+html {
+  scroll-padding-top: 72px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+:focus-visible {
+  outline: 3px solid var(--acc);
+  outline-offset: 3px;
+}
+
+.bin {
+  white-space: nowrap;
+  animation: slide 40s linear infinite;
+  display: inline-block;
+}
+
+@keyframes slide {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.ch {
+  display: inline-block;
+  will-change: transform;
+}
+
+.skip {
+  position: absolute;
+  left: -999px;
+}
+
+.skip:focus {
+  left: 12px;
+  top: 12px;
+  z-index: 60;
+  background: var(--acc);
+  color: #160000;
+  padding: 8px 14px;
+  font-weight: bold;
+}
+
+::selection {
+  background: var(--acc);
+  color: #160000;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bin {
+    animation: none;
+  }
+  * {
+    scroll-behavior: auto !important;
+  }
+}

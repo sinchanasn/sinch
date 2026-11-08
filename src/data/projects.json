@@ -1,0 +1,18 @@
+[
+  {
+    "id": "viabl",
+    "t": "Viabl",
+    "s": "Institutional startup diligence platform",
+    "d": "Simulates a four-partner VC committee (VC, Founder, CTO and Growth) to de-risk ventures. A six-axis weighted scoring engine rates each startup, and radar charts make the weakest axis obvious in seconds.",
+    "tech": ["React", "TypeScript", "Node.js", "Express", "Tailwind CSS"],
+    "m": [
+      ["4", "partner committee personas"],
+      ["6", "weighted scoring axes"],
+      ["[X]", "startups evaluated"]
+    ],
+    "radar": true,
+    "radarData": [0.78, 0.64, 0.85, 0.52, 0.7, 0.6],
+    "demo": "https://viabl-tawny.vercel.app/",
+    "repo": "https://github.com/sinchanasn/viabl"
+  }
+]
